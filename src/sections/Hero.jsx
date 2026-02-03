@@ -1,0 +1,14 @@
+import React from "react";
+import "./Hero.css";
+
+export default function Hero(){
+    return(
+        <section className="hero">
+            <div className="hero-content">
+                <h1>Tu escape de lujo en la ciudad</h1>
+                <p>Descubre habitaciones únicas y un servicio exclusivo</p>
+                <button className="hero-btn">Ver Habitaciones</button>
+            </div>
+        </section>
+    );
+}

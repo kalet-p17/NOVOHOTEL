@@ -1,0 +1,41 @@
+.hero{
+    height: 100vh;
+    background: url("https://media.istockphoto.com/id/2228611833/photo/luxurious-beachfront-villa-with-infinity-pool.jpg?s=2048x2048&w=is&k=20&c=RQPtLtkp-9qC2hmUdUhkBuYdORabV4CvwrXCaYEkTKc=");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+}
+/*::before es un pseudo elemento que sirve para añadir decoraciones formas overlay (imagenes semi transparentes)*/
+.hero::before{
+    content: "";
+    inset: 0;
+    background: rgba(0, 0, 0,0.45);
+}
+.hero-content{
+    position: relative;
+    max-width: 600px;
+    padding: 0.1rem;
+}
+.hero-content h1{
+    font-size: calc(2rem,5w+1rem,4rem);
+    margin-bottom: 1rem;
+.hero-content p{
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+.hero-btn{
+    background: #b48a5a;
+    color: #fff;
+    border:none;
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s,background-color 0.3s ;
+}
+.hero-btn:hover{
+    background: #b48a5a;
+    transform: translate(-2px);
+}
