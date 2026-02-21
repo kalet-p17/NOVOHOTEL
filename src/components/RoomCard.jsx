@@ -3,7 +3,7 @@ import"./RoomCard.css";
 
 export default function RoomCard({img, price, title,description}) {
     return(
-       <article className="roomcard">
+       <article className="room-card">
         <img src={img} alt={title} />
         <div className="room-info">
             <h3>{title}</h3>
